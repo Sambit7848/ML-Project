@@ -4,17 +4,30 @@
 
 **Analyze • Predict • Recommend • Deploy**
 
+[![Python](https://img.shields.io/badge/🐍%20Python-3.x-blue?style=flat-square)](https://www.python.org/)
+[![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Multi--Class%20Classification-orange?style=flat-square)](https://scikit-learn.org/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-Classification-green?style=flat-square)](https://xgboost.readthedocs.io/)
+[![Scikit-Learn](https://img.shields.io/badge/🧠%20Scikit--Learn-ML-orange?style=flat-square)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/🚀%20Streamlit-Deployment-red?style=flat-square)](https://streamlit.io/)
+
 ---
 
 ## 📌 Overview
 
-The **Customer Next Purchase Prediction System** is a Machine Learning project that predicts the **category a customer is most likely to purchase next** based on their historical purchasing behavior.
+The **Customer Next Purchase Prediction System** is a Machine Learning project designed to predict the **category a customer is most likely to purchase next** based on their historical purchasing behavior.
 
 The project uses customer transaction data, feature engineering, classification models, and an interactive **Streamlit application** to generate predictions and personalized product recommendations.
 
 ### 🎯 Main Goal
 
 > **Predict what a customer is likely to purchase next and recommend relevant products.**
+
+This can support:
+
+* 🛒 Personalized product recommendations
+* 🎯 Targeted customer engagement
+* 📈 Sales opportunities
+* 📊 Data-driven marketing decisions
 
 ---
 
@@ -55,7 +68,7 @@ The project uses customer transaction data, feature engineering, classification 
 
 # ⚙️ Feature Engineering
 
-Customer purchasing behavior is converted into meaningful Machine Learning features such as:
+The model uses customer purchasing behavior to create features such as:
 
 * 🧾 Total orders
 * 💰 Total spending
@@ -68,27 +81,25 @@ Customer purchasing behavior is converted into meaningful Machine Learning featu
 * ↩️ Return rate
 * ⏱️ Days since last purchase
 
-These features are generated from each customer's historical transactions.
+These customer-level features are generated from historical transactions.
 
 ---
 
-# 🧠 Machine Learning Models
+# 🧠 Machine Learning
 
-The project compares multiple classification algorithms:
+The project compares multiple classification models:
 
-| Model               | Purpose                   |
-| ------------------- | ------------------------- |
-| Logistic Regression | Baseline classification   |
-| Random Forest       | Ensemble classification   |
-| XGBoost             | Final prediction workflow |
+* Logistic Regression
+* Random Forest
+* XGBoost
 
-The application uses **XGBoost** for generating the next-purchase category predictions.
+The Streamlit application uses **XGBoost** for the next-purchase prediction workflow.
 
 ---
 
 # 🎯 Prediction
 
-Instead of providing only one possible category, the system generates **Top-5 next purchase predictions** with probability scores.
+The system generates the **Top-5 most probable purchase categories** with their probability scores.
 
 ```text
 👤 Customer
@@ -97,20 +108,20 @@ Instead of providing only one possible category, the system generates **Top-5 ne
      ↓
 🤖 XGBoost
      ↓
-🏆 Top-5 Categories
+🏆 Top-5 Predictions
      ↓
 🛒 Product Recommendations
 ```
 
-The Streamlit application displays the most likely category, Top-5 predictions, probabilities, and a prediction chart.
+The application displays the most likely category, prediction probability, Top-5 predictions, and a probability chart.
 
 ---
 
-# 🛒 Personalized Recommendations
+# 🛒 Personalized Product Recommendations
 
-After predicting the most likely purchase category, the system recommends products from that category based on **product rating and price**.
+After predicting the most likely category, the system recommends products from that category based on **product rating and price**.
 
-The application displays:
+Each recommendation displays:
 
 * Product name
 * Brand
@@ -133,7 +144,7 @@ The project includes an interactive **Customer Next Purchase AI** application.
 * 🏆 Top-5 predictions
 * 📈 Probability visualization
 * 🛒 Personalized recommendations
-* 🔍 Customer behavior used by the model
+* 🔍 Customer behavior analysis
 
 The application allows users to select a customer and generate an AI-powered prediction.
 
@@ -141,17 +152,18 @@ The application allows users to select a customer and generate an AI-powered pre
 
 # 🛠️ Technologies Used
 
-| Technology              | Purpose              |
-| ----------------------- | -------------------- |
-| 🐍 Python               | Programming          |
-| 📊 Pandas               | Data Analysis        |
-| 🔢 NumPy                | Numerical Operations |
-| 📈 Matplotlib & Seaborn | Visualization        |
-| 🧠 Scikit-Learn         | Machine Learning     |
-| 🚀 XGBoost              | Classification       |
-| 📓 Jupyter Notebook     | Development          |
-| 💾 Joblib               | Model Storage        |
-| 🌐 Streamlit            | Deployment           |
+| Technology          | Purpose              |
+| ------------------- | -------------------- |
+| 🐍 Python           | Programming          |
+| 📊 Pandas           | Data Analysis        |
+| 🔢 NumPy            | Numerical Operations |
+| 📈 Matplotlib       | Visualization        |
+| 🎨 Seaborn          | Visualization        |
+| 🧠 Scikit-Learn     | Machine Learning     |
+| 🚀 XGBoost          | Classification       |
+| 📓 Jupyter Notebook | Development          |
+| 💾 Joblib           | Model Storage        |
+| 🌐 Streamlit        | Deployment           |
 
 ---
 
@@ -185,8 +197,6 @@ Personalized Recommendation
  Better Customer Engagement
 ```
 
-This approach can support **personalized marketing, customer engagement, product recommendations, and data-driven sales decisions**.
-
 ---
 
 # 🧪 Project Status
@@ -213,7 +223,6 @@ This approach can support **personalized marketing, customer engagement, product
 * 🔹 Real-time customer data
 * 🔹 Automated model retraining
 * 🔹 Cloud deployment
-* 🔹 Real-time recommendations
 
 ---
 
